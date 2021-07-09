@@ -7,7 +7,6 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "gh-pages": "^3.2.3",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
     "moment": "2.29.1",
@@ -55,5 +54,8 @@
   "optionalDependencies": {
     "@babel/core": "7.14.3",
     "typescript": "4.2.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
