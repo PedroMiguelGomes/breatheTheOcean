@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import ReactDOM from 'react-dom';
+
 // reactstrap components
 import { Row, Col, Container } from "reactstrap";
 
@@ -80,11 +82,15 @@ const questions = [
   },
 ];
 
+let correct_answer = false;
+
 function LandingPageHeader() {
   let pageHeader = React.createRef();
 
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
+
+  const [showResults, setShowResults] = React.useState(false)
 
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -100,17 +106,30 @@ function LandingPageHeader() {
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  const handleAnswerButtonClick = (answerOption) => {
+  const handleAnswerButtonClick = (ev, answerOption) => {
+    const nextQuestion = currentQuestion + 1;
+
     if (answerOption) {
-      alert("the answer is correct!")
+      ev.target.classList.add("rightAnswer");
+      if (nextQuestion < questions.length) {
+        setTimeout(() => {
+          ev.target.classList.remove("rightAnswer");
+          setCurrentQuestion(nextQuestion);
+        }, 2000);
+      } 
+    }
+    else {
+      ev.target.classList.add("wrongAnswer");
+      if (nextQuestion < questions.length) {
+        setTimeout(() => {
+          ev.target.classList.remove("wrongAnswer");
+          setCurrentQuestion(nextQuestion);
+        }, 2000);
+      } 
     }
 
-    const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < questions.length) {
-      setCurrentQuestion(nextQuestion);
-    } else {
-      alert("Parabéns! Chegaste ao fim do questionário")
-    }
+
+
   };
 
 
@@ -142,7 +161,7 @@ function LandingPageHeader() {
                     <Row>
                       {questions[currentQuestion].answerOptions.map((answerOption) => (
                         <Col md="6">
-                          <button className="quizButton" onClick={() => handleAnswerButtonClick(answerOption.isCorrect)}>
+                          <button className="quizButton" onClick={(ev) => handleAnswerButtonClick(ev, answerOption.isCorrect)}>
                             {answerOption.answerText}
                           </button>
                         </Col>

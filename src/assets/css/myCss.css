@@ -47,6 +47,14 @@ p.texto {
     font-family: 'Space Mono'
 }
 
+.quizButton.rightAnswer {
+    background-color: rgb(30, 255, 0);
+}
+
+.quizButton.wrongAnswer {
+    background-color: rgb(255, 0, 0);
+}
+
 .curiusidades {
     font-family: 'Syne';
     font-weight: bold;

@@ -192,7 +192,7 @@ function LandingPage() {
             <Row>
               <Col md="2"></Col>
               <Col md="8" className="last">
-                <h5 style={{ 'text-align': 'center' }}>Toda a vida na Terra depende do oceano. Podemos contar com ele para a qualidade do ar que respiramos, a regulação do clima mas também como fonte de alimento, energia, entre tantos outros benefícios. Participa no movimento breathe the ocean</h5>
+                <h5 style={{ 'text-align': 'center' }}>Toda a vida na Terra depende do oceano. Podemos contar com ele para a qualidade do ar que respiramos, a regulação do clima mas também como fonte de alimento, energia, entre tantos outros benefícios. Participa no movimento Breathe the Ocean.</h5>
               </Col>
               <Col md="2"></Col>
             </Row>
