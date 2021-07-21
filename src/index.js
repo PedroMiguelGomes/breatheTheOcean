@@ -33,11 +33,11 @@ ReactDOM.render(
     <Switch>
       <Switch>
         <Route
-          path="/breathe"
+          path="/breatheTheOcean"
           render={(props) => <LandingPage {...props} />}
         />
-        <Redirect to="/breathe" />
-        <Redirect from="/" to="/breathe" />
+        <Redirect to="/breatheTheOcean" />
+        <Redirect from="/" to="/breatheTheOcean" />
       </Switch>
     </Switch>
   </BrowserRouter>,
