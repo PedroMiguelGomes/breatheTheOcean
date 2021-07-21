@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/breatheTheOcean/static/css/main.4e45edef.chunk.css",
-    "main.js": "/breatheTheOcean/static/js/main.7cb79d8d.chunk.js",
-    "main.js.map": "/breatheTheOcean/static/js/main.7cb79d8d.chunk.js.map",
+    "main.js": "/breatheTheOcean/static/js/main.f494c1d3.chunk.js",
+    "main.js.map": "/breatheTheOcean/static/js/main.f494c1d3.chunk.js.map",
     "runtime-main.js": "/breatheTheOcean/static/js/runtime-main.146be86b.js",
     "runtime-main.js.map": "/breatheTheOcean/static/js/runtime-main.146be86b.js.map",
     "static/js/2.59b06303.chunk.js": "/breatheTheOcean/static/js/2.59b06303.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.146be86b.js",
     "static/js/2.59b06303.chunk.js",
     "static/css/main.4e45edef.chunk.css",
-    "static/js/main.7cb79d8d.chunk.js"
+    "static/js/main.f494c1d3.chunk.js"
   ]
 }
